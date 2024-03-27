@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bg"
+    android:layout_height="match_parent"
+    tools:context=".detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ser">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/card"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    app:srcCompat="@drawable/search_icon" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/query"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/ll"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:hint="Search here ex:CID"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:singleLine="false"
+                android:textColor="#D8D7D7"
+                android:textColorHint="#B5B5B5"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Search" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/adder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

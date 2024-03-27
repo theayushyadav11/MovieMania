@@ -1,0 +1,5 @@
+<!-- res/drawable/shadow_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+   android:shape="oval">
+    <solid android:color="#a338a1"></solid>
+</shape>
